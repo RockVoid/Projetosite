@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1556775351-fe97561f7b42?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Redressed', cursive, sans-serif;
+    font-size: 2.5rem;
+    transition: background 0.3s ease;
+}
+
+.countdown {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 10rem;
+}
+
+.countdown h2 {
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #c1c1c1;
+}
+
+.nyear {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    opacity: 0.6;
+}
+
+#btn {
+    background: rgb(0, 0, 0, 0.7);
+    color: #ffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    font-family: inherit;
+    margin-top: 1rem;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background: black;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    padding: 0.15rem;
+    background-color: rgb(104, 136, 136, 0.5);    
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}

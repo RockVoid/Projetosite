@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'Yusei Magic', sans-serif;
+    background: #dff9fb;
+}
+
+ul {
+    list-style: none;
+}
+
+.quiz-container {
+    box-shadow: 2px 2px 2px 2px #ccc;
+    border-radius: 10px;
+    width: 60vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quiz-header {
+    background: #fff;
+    padding: 0.5rem 0.25rem;
+    text-align: center;
+}
+
+.quiz-header li {
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.btn {
+    background: #686de0;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reload {
+    background: #fff;
+    color: #686de0;
+}
+
+.btn:hover {
+    background: #badc58;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}

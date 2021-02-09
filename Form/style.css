@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	min-height: 100vh;
+}
+
+.header {
+	background: #EE5A24;
+	color: #fff;
+	padding: 0.5rem 0.75rem;
+}
+
+.form {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-control {
+	padding: 0.4rem 0;
+}
+
+.form-control input {
+	display: block;
+	padding: 0.2rem 0.1rem;
+	border: 1px solid #ccc;
+}
+
+.form-control input:focus {
+	border: 1px solid #777;
+}
+
+.form-control.sucess input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: relative;
+	top: -25px;
+	left: 210px;
+}
+
+.form-control.sucess i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.btn {
+	border: none;
+	background: #EE5A24;
+	border-radius: 5px;
+	color: #fff;
+	width: 100%;
+	padding: 0.25rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+@media screen and (min-width: 550px) and (max-width: 768px) {
+	.container {
+		width: 80vw;
+		min-height: 80vh;
+		margin: 0 auto;
+		border: 2px solid #EE5A24;
+	}
+
+	.btn {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.container {
+		width: 40vw;
+		min-height: 60vh;
+		margin: 5rem auto;
+		border: 1px solid #EE5A24;
+	}
+
+	.btn {
+		width: 400px;
+	}
+}
